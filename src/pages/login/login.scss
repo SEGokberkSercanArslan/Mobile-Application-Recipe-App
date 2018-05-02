@@ -9,6 +9,7 @@ page-login {
 .loginButtons button{
   margin: 10px;
   margin-top: 15px;
+  opacity: 0.6;
 }
 
 .loginButtons #signUpButton{
@@ -17,9 +18,17 @@ page-login {
 }
 
 .loginButtons ion-label{
+  margin-top: 80px;
   text-align: center;
   font-size: 24px;
   color: #488aff;
+}
+
+#loginContent{
+  background: url("../assets/imgs/CookLogo.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 page-login h2{

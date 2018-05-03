@@ -8,7 +8,6 @@ import { MyApp } from './app.component';
 import {LoginPage} from "../pages/login/login";
 import {SignupPage} from "../pages/signup/signup";
 import {RecipeListPage} from "../pages/recipe-list/recipe-list";
-import {AddRecipePage} from "../pages/add-recipe/add-recipe";
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import {AddRecipePage} from "../pages/add-recipe/add-recipe";
     LoginPage,
     SignupPage,
     RecipeListPage,
-    AddRecipePage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +26,7 @@ import {AddRecipePage} from "../pages/add-recipe/add-recipe";
     LoginPage,
     SignupPage,
     RecipeListPage,
-    AddRecipePage
+
   ],
   providers: [
     StatusBar,

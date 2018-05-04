@@ -9,6 +9,7 @@ import {LoginPage} from "../pages/login/login";
 import {SignupPage} from "../pages/signup/signup";
 import {RecipeListPage} from "../pages/recipe-list/recipe-list";
 import {MyFavoriteRecipesPage} from "../pages/my-favorite-recipes/my-favorite-recipes";
+import {AddingPage} from "../pages/adding/adding";
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import {MyFavoriteRecipesPage} from "../pages/my-favorite-recipes/my-favorite-re
     SignupPage,
     RecipeListPage,
     MyFavoriteRecipesPage,
+    AddingPage,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,7 @@ import {MyFavoriteRecipesPage} from "../pages/my-favorite-recipes/my-favorite-re
     SignupPage,
     RecipeListPage,
     MyFavoriteRecipesPage,
-
+    AddingPage,
   ],
   providers: [
     StatusBar,

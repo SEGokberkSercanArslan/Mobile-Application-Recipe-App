@@ -6,11 +6,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {LoginPage} from "../pages/login/login";
 import {SignupPage} from "../pages/signup/signup";
 import {RecipeListPage} from "../pages/recipe-list/recipe-list";
+import {MyFavoriteRecipesPage} from "../pages/my-favorite-recipes/my-favorite-recipes";
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = LoginPage;
+  rootPage:any = RecipeListPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

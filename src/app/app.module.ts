@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import {LoginPage} from "../pages/login/login";
 import {SignupPage} from "../pages/signup/signup";
 import {RecipeListPage} from "../pages/recipe-list/recipe-list";
+import {MyFavoriteRecipesPage} from "../pages/my-favorite-recipes/my-favorite-recipes";
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import {RecipeListPage} from "../pages/recipe-list/recipe-list";
     LoginPage,
     SignupPage,
     RecipeListPage,
+    MyFavoriteRecipesPage,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,7 @@ import {RecipeListPage} from "../pages/recipe-list/recipe-list";
     LoginPage,
     SignupPage,
     RecipeListPage,
+    MyFavoriteRecipesPage,
 
   ],
   providers: [

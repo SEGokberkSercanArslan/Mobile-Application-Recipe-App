@@ -12,30 +12,7 @@
   <ion-searchbar placeholder="What you want to search ?"></ion-searchbar>
 
   <ion-list>
-    <ion-item-sliding>
-      <ion-item>
-
-      <h2 ion-item *ngFor="let recipe of recipes">{{recipe.title}} </h2>
-
-      </ion-item>
-
-      <ion-item-options>
-        <button ion-button color="light" icon-start>
-          <ion-icon name="ios-more"></ion-icon>
-          INFO
-        </button>
-        <button ion-button color="primary" icon-start>
-          <ion-icon name="ios-wine"></ion-icon>
-          COOK!
-        </button>
-        <button ion-button color="secondary" icon-start>
-          <ion-icon name="ios-heart-outline"></ion-icon>
-          ADD TO
-          FAVORITES
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-
+    <ion-item *ngFor="let recipe of recipes">{{recipe.title}}</ion-item>
   </ion-list>
 
   <ion-fab bottom right>

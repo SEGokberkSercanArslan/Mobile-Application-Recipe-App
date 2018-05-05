@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {RecipesService} from "../../Services/recipes.service";
 import {AddStagePage} from "../add-stage/add-stage";
-import {DenemePage} from "../deneme/deneme";
 
 @IonicPage()
 @Component({
@@ -18,8 +17,5 @@ export class AddingPage {
     this.navCtrl.pop();
   }
 
-  addNewStage(){
-    this.navCtrl.push(DenemePage);
-  }
 
 }

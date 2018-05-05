@@ -1,5 +1,4 @@
 
-
 export class RecipeObject {
 
   protected recipeObjectCollection: RecipeObject[] = [] ;

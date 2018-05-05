@@ -16,7 +16,10 @@ export class RecipeListPage {
   }
 
   ionViewWillEnter(){
-  this.recipes = this.recipesService.getRecipes();
+  this.recipesService.getRecipes()
+    .then(
+      (recipes) => this.recipes = recipes
+    );
   }
 
   navigateAddRecipe() {

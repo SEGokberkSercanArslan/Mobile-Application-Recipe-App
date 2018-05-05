@@ -11,6 +11,7 @@ import {RecipeListPage} from "../pages/recipe-list/recipe-list";
 import {MyFavoriteRecipesPage} from "../pages/my-favorite-recipes/my-favorite-recipes";
 import {AddingPage} from "../pages/adding/adding";
 import {RecipesService} from "../Services/recipes.service";
+import {AddStagePage} from "../pages/add-stage/add-stage";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {RecipesService} from "../Services/recipes.service";
     RecipeListPage,
     MyFavoriteRecipesPage,
     AddingPage,
+    AddStagePage
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import {RecipesService} from "../Services/recipes.service";
     RecipeListPage,
     MyFavoriteRecipesPage,
     AddingPage,
+    AddStagePage
   ],
   providers: [
     StatusBar,

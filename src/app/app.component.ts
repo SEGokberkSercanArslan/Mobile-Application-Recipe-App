@@ -7,6 +7,7 @@ import {LoginPage} from "../pages/login/login";
 import {SignupPage} from "../pages/signup/signup";
 import {RecipeListPage} from "../pages/recipe-list/recipe-list";
 import {MyFavoriteRecipesPage} from "../pages/my-favorite-recipes/my-favorite-recipes";
+import {AddStagePage} from "../pages/add-stage/add-stage";
 @Component({
   templateUrl: 'app.html'
 })

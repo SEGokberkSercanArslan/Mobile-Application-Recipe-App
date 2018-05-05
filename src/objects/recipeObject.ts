@@ -14,7 +14,8 @@ export class RecipeObject {
 
 export class Stage{
 
+  private stageTitle:string;
   private procedure:string;
-  private duration:number;
+  private duration:string;
 
 }

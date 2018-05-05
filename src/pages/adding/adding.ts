@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {RecipesService} from "../../Services/recipes.service";
 
 @IonicPage()
 @Component({
@@ -8,14 +9,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AddingPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(private  navCtrl: NavController, private recipesService: RecipesService) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AddingPage');
-  }
-
-  onAddRecipe(value: {title:string}) {
-
+  onAddRecipe(value: {title: string}) {
+    this.recipesService.addRecipe(value);
+    this.navCtrl.pop();
   }
 
 }

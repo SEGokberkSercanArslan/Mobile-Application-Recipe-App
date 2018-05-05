@@ -9,7 +9,7 @@ import {RecipeListPage} from "../pages/recipe-list/recipe-list";
 import {MyFavoriteRecipesPage} from "../pages/my-favorite-recipes/my-favorite-recipes";
 import * as firebase from "firebase";
 
-const config = {
+var config = {
   apiKey: "AIzaSyAjZUZc20kfJb5sGu8-pGLiM2cXOL-uDRk",
   authDomain: "cook-organizer-app-se380.firebaseapp.com",
   databaseURL: "https://cook-organizer-app-se380.firebaseio.com",
@@ -20,7 +20,15 @@ const config = {
 
 firebase.initializeApp(config);
 
-const database = firebase.database();
+const FirebaseDatabase = firebase.database().ref();
+
+var informations = FirebaseDatabase.child("Info");
+
+informations.push({
+  "title": "Dolma",
+  "type": "olive oils",
+  "how to make": "bla bla"
+});
 
 @Component({
   templateUrl: 'app.html'

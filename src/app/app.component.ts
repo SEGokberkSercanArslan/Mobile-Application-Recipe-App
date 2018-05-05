@@ -12,7 +12,7 @@ import {AddStagePage} from "../pages/add-stage/add-stage";
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = RecipeListPage;
+  rootPage:any = AddStagePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

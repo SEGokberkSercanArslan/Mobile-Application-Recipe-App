@@ -7,6 +7,21 @@ import {LoginPage} from "../pages/login/login";
 import {SignupPage} from "../pages/signup/signup";
 import {RecipeListPage} from "../pages/recipe-list/recipe-list";
 import {MyFavoriteRecipesPage} from "../pages/my-favorite-recipes/my-favorite-recipes";
+import * as firebase from "firebase";
+
+const config = {
+  apiKey: "AIzaSyAjZUZc20kfJb5sGu8-pGLiM2cXOL-uDRk",
+  authDomain: "cook-organizer-app-se380.firebaseapp.com",
+  databaseURL: "https://cook-organizer-app-se380.firebaseio.com",
+  projectId: "cook-organizer-app-se380",
+  storageBucket: "cook-organizer-app-se380.appspot.com",
+  messagingSenderId: "315733408986"
+};
+
+firebase.initializeApp(config);
+
+const database = firebase.database();
+
 @Component({
   templateUrl: 'app.html'
 })

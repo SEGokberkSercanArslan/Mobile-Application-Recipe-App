@@ -17,5 +17,8 @@ export class AddingPage {
     this.navCtrl.pop();
   }
 
+  addNewStage(recipeTitle: {title: string}){
+    this.navCtrl.push(AddStagePage,{recipeTitle:"deneme"});
+  }
 
 }

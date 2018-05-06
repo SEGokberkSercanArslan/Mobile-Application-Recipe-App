@@ -13,6 +13,7 @@ import {MyFavoriteRecipesPage} from "../pages/my-favorite-recipes/my-favorite-re
 import {AddingPage} from "../pages/adding/adding";
 import {RecipesService} from "../Services/recipes.service";
 import {AddStagePage} from "../pages/add-stage/add-stage";
+import {StageService} from "../Services/stage.service";
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import {AddStagePage} from "../pages/add-stage/add-stage";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}, RecipesService, Storage,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}, RecipesService, Storage,StageService
   ]
 })
 export class AppModule {}

@@ -12,7 +12,7 @@
 <form (ngSubmit)="onAddRecipe(f.value)" #f="ngForm">
   <ion-item>
     <ion-label>Recipe</ion-label>
-    <ion-input type="text" name="title" ngModel required></ion-input>
+    <ion-input type="text" name="title" ngModel required placeholder="Title"></ion-input>
   </ion-item>
   <button ion-button block type="submit" [disabled]="!f.valid">Finish your Recipe</button>
 </form>

@@ -8,11 +8,12 @@ import {SignupPage} from "../pages/signup/signup";
 import {RecipeListPage} from "../pages/recipe-list/recipe-list";
 import {MyFavoriteRecipesPage} from "../pages/my-favorite-recipes/my-favorite-recipes";
 import {AddStagePage} from "../pages/add-stage/add-stage";
+import {ForgetPasswordPage} from "../pages/forget-password/forget-password";
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = RecipeListPage;
+  rootPage:any = ForgetPasswordPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

@@ -14,6 +14,8 @@ import {AddingPage} from "../pages/adding/adding";
 import {RecipesService} from "../Services/recipes.service";
 import {AddStagePage} from "../pages/add-stage/add-stage";
 import {StageService} from "../Services/stage.service";
+import {ForgetPasswordPage} from "../pages/forget-password/forget-password";
+import {UserService} from "../Services/user.service";
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import {StageService} from "../Services/stage.service";
     RecipeListPage,
     MyFavoriteRecipesPage,
     AddingPage,
-    AddStagePage
+    AddStagePage,
+    ForgetPasswordPage
   ],
   imports: [
     BrowserModule,
@@ -38,12 +41,13 @@ import {StageService} from "../Services/stage.service";
     RecipeListPage,
     MyFavoriteRecipesPage,
     AddingPage,
-    AddStagePage
+    AddStagePage,
+    ForgetPasswordPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}, RecipesService, Storage,StageService
+    {provide: ErrorHandler, useClass: IonicErrorHandler}, RecipesService, Storage,StageService,UserService
   ]
 })
 export class AppModule {}

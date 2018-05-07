@@ -1,3 +1,4 @@
+import {UserService} from "../Services/user.service";
 
 export class UserObject{
 
@@ -5,7 +6,7 @@ export class UserObject{
   private password:string;
   private eMail:string;
 
-  constructor(username:string,password:string,eMail:string){
+  constructor(username:any,password:any,eMail:any){
     this.username=username;
     this.password=password;
     this.eMail=eMail;

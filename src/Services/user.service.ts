@@ -14,4 +14,8 @@ export class UserService{
     this.userCollection.splice(postion,1);
   }
 
+  getUserCollection(){
+    return this.userCollection;
+  }
+
 }

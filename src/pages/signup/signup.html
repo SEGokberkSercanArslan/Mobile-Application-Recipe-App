@@ -15,24 +15,25 @@
 
 <ion-content id="signUpContent" padding>
 
-  <form>
+  <form (ngSubmit)="signUpUser()">
     <ion-list>
       <ion-item>
         <ion-label floating>E-Mail</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" [(ngModel)]="user.email" name="email"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>Username</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" [(ngModel)]="user.username" name="username"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>Password</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" [(ngModel)]="user.password" name="password"></ion-input>
       </ion-item>
     </ion-list>
+    <div class="signUp">
+      <button ion-button full type="submit">Sign Up</button>
+    </div>
   </form>
-  <div class="signUp">
-    <button ion-button full>Sign Up</button>
-  </div>
+
 
 </ion-content>

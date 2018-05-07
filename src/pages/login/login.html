@@ -30,7 +30,7 @@
   </ion-list>
   <div class="loginButtons">
     <button ion-button full>Log In</button>
-    <button ion-button full>Forget Password</button>
+    <button ion-button full (click)="pushForgetPassword()">Forget Password</button>
     <ion-label>OR</ion-label>
     <button ion-button full outline id="signUpButton" (click)="navigateSignUp()">Sign Up</button>
   </div>

@@ -13,7 +13,7 @@ import {ForgetPasswordPage} from "../pages/forget-password/forget-password";
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = ForgetPasswordPage;
+  rootPage:any = LoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

@@ -16,24 +16,25 @@
 <ion-content id="loginContent" padding>
 
 
-
-  <h2>Cook Organizer App</h2>
-  <ion-list>
-    <ion-item>
-      <ion-label floating>Username</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>Password</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-  </ion-list>
-  <div class="loginButtons">
-    <button ion-button full>Log In</button>
-    <button ion-button full (click)="pushForgetPassword()">Forget Password</button>
-    <ion-label>OR</ion-label>
-    <button ion-button full outline id="signUpButton" (click)="navigateSignUp()">Sign Up</button>
-  </div>
+  <form (ngSubmit)="loginAuthentication()">
+    <h2>Cook Organizer App</h2>
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" [(ngModel)]="currentUser.username" name="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="currentUser.password" name="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="loginButtons">
+      <button ion-button full type="submit">Log In</button>
+      <button ion-button full (click)="pushForgetPassword()">Forget Password</button>
+      <ion-label>OR</ion-label>
+      <button ion-button full outline id="signUpButton" (click)="navigateSignUp()">Sign Up</button>
+    </div>
+  </form>
 
 
 </ion-content>

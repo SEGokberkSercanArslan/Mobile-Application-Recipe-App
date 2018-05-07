@@ -17,6 +17,12 @@ import {ForgetPasswordPage} from "../forget-password/forget-password";
 })
 export class LoginPage {
 
+
+  currentUser = {
+    username:"",
+    password:""
+  }
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -30,6 +36,10 @@ export class LoginPage {
 
   pushForgetPassword(){
     this.navCtrl.push(ForgetPasswordPage);
+  }
+
+  loginAuthentication(){
+    console.log(this.currentUser);
   }
 
 }

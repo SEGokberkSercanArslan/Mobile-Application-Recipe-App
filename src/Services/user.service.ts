@@ -1,11 +1,17 @@
 import {UserObject} from "../objects/userObject";
+import {Storage} from "@ionic/storage";
+import {Injectable} from "@angular/core";
 
+@Injectable()
 export class UserService{
 
   private userCollection:UserObject[] = [];
 
+  constructor(private storage: Storage){}
+
   addUserToCollection(user:UserObject){
     this.userCollection.push(user);
+    this.storage.set('users', this.userCollection);
   }
   removeUserToCollection(user:UserObject){
     const postion = this.userCollection.findIndex((userRemove:UserObject) => {
@@ -15,7 +21,14 @@ export class UserService{
   }
 
   getUserCollection(){
-    return this.userCollection;
+    //return this.userCollection;
+    return this.storage.get('users')
+      .then(
+        (userCollection) => {
+          this.userCollection = userCollection == null ? [] : userCollection;
+          return this.userCollection.length;
+        }
+      )
   }
 
 }

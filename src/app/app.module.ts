@@ -16,6 +16,9 @@ import {AddStagePage} from "../pages/add-stage/add-stage";
 import {StageService} from "../Services/stage.service";
 import {ForgetPasswordPage} from "../pages/forget-password/forget-password";
 import {UserService} from "../Services/user.service";
+import {TabsPage} from "../pages/tabs/tabs";
+import {HomePage} from "../pages/home/home";
+import {RecipesPage} from "../pages/recipes/recipes";
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import {UserService} from "../Services/user.service";
     MyFavoriteRecipesPage,
     AddingPage,
     AddStagePage,
-    ForgetPasswordPage
+    ForgetPasswordPage,
+    TabsPage,
+    HomePage,
+    RecipesPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +48,10 @@ import {UserService} from "../Services/user.service";
     MyFavoriteRecipesPage,
     AddingPage,
     AddStagePage,
-    ForgetPasswordPage
+    ForgetPasswordPage,
+    TabsPage,
+    HomePage,
+    RecipesPage
   ],
   providers: [
     StatusBar,

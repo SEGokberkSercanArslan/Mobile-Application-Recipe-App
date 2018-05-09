@@ -1,9 +1,13 @@
 import {StageObject} from "../objects/stageObject";
+import {Storage} from "@ionic/storage";
+import {Injectable} from "@angular/core";
 
-
+@Injectable()
 export class StageService{
 
   private stageCollection:StageObject[] = [];
+
+  constructor(private storage: Storage){}
 
   addStage(stage:StageObject){
     this.stageCollection.push(stage)

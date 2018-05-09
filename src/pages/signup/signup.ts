@@ -32,7 +32,8 @@ export class SignupPage {
     console.log('ionViewDidLoad SignupPage');
   }
 
-  signUpUser(){
+ /**
+  *  signUpUser(){
     for (let i=0;i<this.collection.getUserCollection().length;i++){
       if (this.user.username == this.collection.getUserCollection()[i].getUsername()){
         this.found = true;
@@ -40,9 +41,10 @@ export class SignupPage {
         break;
       }
     }
+
     if (!this.found){
       this.collection.addUserToCollection(new UserObject(this.user.username,this.user.password,this.user.email));
     }
   }
-
+*/
 }

@@ -39,7 +39,7 @@ export class LoginPage {
   pushForgetPassword(){
     this.navCtrl.push(ForgetPasswordPage);
   }
-
+/**
   loginAuthentication(){
     for(let i=0;i<this.userCollection.getUserCollection().length;i++){
       if(this.currentUser.username == this.userCollection.getUserCollection()[i].getUsername()){
@@ -52,5 +52,6 @@ export class LoginPage {
       }
     }
   }
+ */
 
 }

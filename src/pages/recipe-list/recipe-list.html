@@ -3,6 +3,11 @@
 
   <ion-navbar>
     <ion-title>My Recipe List</ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="navigateAddRecipe()">
+        <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -12,11 +17,13 @@
   <ion-searchbar placeholder="What you want to search ?"></ion-searchbar>
 
   <ion-list>
-    <ion-item *ngFor="let recipe of recipes">{{recipe.title}}</ion-item>
+    <ion-item *ngFor="let recipe of recipes">
+      {{recipe.title}}
+      &nbsp;
+      <button ion-button clear item-right (click)="viewRecipe(item)">View</button>
+      <button ion-button clear icon-only item-right><ion-icon name="ios-heart-outline"></ion-icon></button>
+    </ion-item>
   </ion-list>
 
-  <ion-fab bottom right>
-    <button (click)="navigateAddRecipe()"ion-fab><ion-icon name="add"></ion-icon></button>
-  </ion-fab>
 
 </ion-content>

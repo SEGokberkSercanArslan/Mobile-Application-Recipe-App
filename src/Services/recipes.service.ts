@@ -11,6 +11,7 @@ export class RecipesService{
     this.recipes.push(recipe);
     this.storage.set('recipes', this.recipes);
   }
+
   getRecipes(){
     return this.storage.get('recipes')
       .then(

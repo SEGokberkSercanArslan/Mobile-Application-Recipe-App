@@ -32,10 +32,10 @@ export class SignupPage {
     console.log('ionViewDidLoad SignupPage');
   }
 
- /**
-  *  signUpUser(){
-    for (let i=0;i<this.collection.getUserCollection().length;i++){
-      if (this.user.username == this.collection.getUserCollection()[i].getUsername()){
+
+    signUpUser(){
+    for (let i=0;i<this.collection.getCollection().length;i++){
+      if (this.user.username == this.collection.getCollection()[i].getUsername()){
         this.found = true;
         //create Alert here
         break;
@@ -44,7 +44,8 @@ export class SignupPage {
 
     if (!this.found){
       this.collection.addUserToCollection(new UserObject(this.user.username,this.user.password,this.user.email));
+      this.navCtrl.pop();
     }
   }
-*/
+
 }

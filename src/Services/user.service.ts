@@ -5,7 +5,7 @@ import {Injectable} from "@angular/core";
 @Injectable()
 export class UserService{
 
-  private userCollection:UserObject[] = [];
+  public userCollection:UserObject[] = [];
 
   constructor(private storage: Storage){}
 
@@ -21,7 +21,7 @@ export class UserService{
   }
 
   getUserCollection(){
-    //return this.userCollection;
+
     return this.storage.get('users')
       .then(
         (userCollection) => {
@@ -29,6 +29,9 @@ export class UserService{
           return this.userCollection.length;
         }
       )
+  }
+  getCollection(){
+    return this.userCollection;
   }
 
 }

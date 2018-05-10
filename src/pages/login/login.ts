@@ -39,11 +39,11 @@ export class LoginPage {
   pushForgetPassword(){
     this.navCtrl.push(ForgetPasswordPage);
   }
-/**
+
   loginAuthentication(){
-    for(let i=0;i<this.userCollection.getUserCollection().length;i++){
-      if(this.currentUser.username == this.userCollection.getUserCollection()[i].getUsername()){
-        if (this.currentUser.password == this.userCollection.getUserCollection()[i].getPassword()){
+    for(let i=0;i<this.userCollection.getCollection().length;i++){
+      if(this.currentUser.username == this.userCollection.getCollection()[i].getUsername()){
+        if (this.currentUser.password == this.userCollection.getCollection()[i].getPassword()){
           this.navCtrl.push(RecipeListPage);
         }
         else {
@@ -52,6 +52,5 @@ export class LoginPage {
       }
     }
   }
- */
 
 }

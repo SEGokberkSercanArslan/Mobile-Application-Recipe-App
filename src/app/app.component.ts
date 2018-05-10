@@ -15,7 +15,7 @@ import {ForgetPasswordPage} from "../pages/forget-password/forget-password";
   providers: [RecipesService]
 })
 export class MyApp {
-  rootPage:any = TabsPage;
+  rootPage:any = LoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

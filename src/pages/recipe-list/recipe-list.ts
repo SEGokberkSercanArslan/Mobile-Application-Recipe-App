@@ -19,7 +19,6 @@ export class RecipeListPage {
   this.recipesService.getRecipes()
     .then(
       (recipes) => this.recipes = recipes
-
     );
   }
 

@@ -4,6 +4,7 @@ import {SignupPage} from "../signup/signup";
 import {ForgetPasswordPage} from "../forget-password/forget-password";
 import {UserService} from "../../Services/user.service";
 import {RecipeListPage} from "../recipe-list/recipe-list";
+import {TabsPage} from "../tabs/tabs";
 
 /**
  * Generated class for the LoginPage page.
@@ -44,7 +45,7 @@ export class LoginPage {
     for(let i=0;i<this.userCollection.getCollection().length;i++){
       if(this.currentUser.username == this.userCollection.getCollection()[i].getUsername()){
         if (this.currentUser.password == this.userCollection.getCollection()[i].getPassword()){
-          this.navCtrl.push(RecipeListPage);
+          this.navCtrl.push(TabsPage);
         }
         else {
           //alert here
